@@ -18,7 +18,7 @@ If you're only developing for one platform you can ignore the steps below that a
 
 - 2.1) **[iOS]** Follow the `add firebase to your app` instructions [here](https://firebase.google.com/docs/ios/setup#add_firebase_to_your_app) to generate your `GoogleService-Info.plist` file if you haven't done so already. Place this file in the `ios/` directory of your project.
 - 2.2) **[Android]** Follow the `manually add firebase` to your app instructions [here](https://firebase.google.com/docs/android/setup#manually_add_firebase) to generate your `google-services.json` file if you haven't done so already. Place this file in the `android/app/` directory of your project.
-  - The current package name is set to `com.rnfirebasestarter`
+  - The current package name is set to `com.Wattle`
   
 #### 3) Start your app
 

@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:RNFirebaseStarter.xcodeproj">
+      location = "group:/Users/ccarter2/Documents/GitHub/react-native-firebase-starter/ios/Wattle.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Wattle.xcodeproj">
    </FileRef>
 </Workspace>

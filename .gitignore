@@ -9,4 +9,4 @@ npm-debug.*
 /android/.gradle/
 /android/keystores/
 /android/local.properties
-/ios/RNFirebaseStarter.xcodeproj/xcuserdata/
+/ios/Wattle.xcodeproj/xcuserdata/

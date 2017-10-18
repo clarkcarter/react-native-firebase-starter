@@ -1,4 +1,4 @@
-package com.rnfirebasestarter;
+package com.Wattle;
 
 import android.app.Application;
 
