@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, StyleSheet, Platform, Image, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import { CalendarList } from 'react-native-calendars'
 import firebase from 'react-native-firebase'
 
@@ -62,7 +62,6 @@ export default class Dates extends React.Component {
     let markedDates = this.formatDates(this.state.dates)
     return (
       <View style={styles.container}>
-        {/*<View>{this.state.dates.map((date) => <Text>{date.date}</Text>)}</View>*/}
         <CalendarList
           onDayPress={this.addDate}
           markedDates={markedDates}

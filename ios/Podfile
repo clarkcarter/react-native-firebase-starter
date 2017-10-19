@@ -12,7 +12,7 @@ target 'Wattle' do
 
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
   # pod 'Firebase/AdMob'
-  # pod 'Firebase/Auth'
+  pod 'Firebase/Auth'
   # pod 'Firebase/Crash'
   # pod 'Firebase/Database'
   # pod 'Firebase/DynamicLinks'
