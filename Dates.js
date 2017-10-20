@@ -2,6 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { CalendarList } from 'react-native-calendars'
 import firebase from 'react-native-firebase'
+import Login from './Login'
+import Logout from './Logout'
 
 export default class Dates extends React.Component {
   constructor() {
@@ -10,15 +12,22 @@ export default class Dates extends React.Component {
     this.unsubscribe = null;
     this.state = {
       dates: [],
+      user: null,
     };
   }
 
   componentDidMount() {
     this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate);
+    this.unsubscriber = firebase.auth().onAuthStateChanged((user) => {
+     this.setState({ user });
+   });
   }
 
   componentWillUnmount() {
     this.unsubscribe();
+    if (this.unsubscriber) {
+      this.unsubscriber();
+    }
   }
 
   onCollectionUpdate = (querySnapshot) => {
@@ -59,9 +68,13 @@ export default class Dates extends React.Component {
   }
 
   render() {
-    let markedDates = this.formatDates(this.state.dates)
+    let markedDates = this.formatDates(this.state.dates);
+    if (!this.state.user) {
+      return <Login />;
+    }
     return (
       <View style={styles.container}>
+        <Logout />
         <CalendarList
           onDayPress={this.addDate}
           markedDates={markedDates}

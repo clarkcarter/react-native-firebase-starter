@@ -6,6 +6,8 @@ target 'Wattle' do
   # use_frameworks!
 
   # Pods for Wattle
+  # Pull in Firebase UI Auth
+  pod 'FirebaseUI/Auth'
 
   # Required by RNFirebase
   pod 'Firebase/Core'
