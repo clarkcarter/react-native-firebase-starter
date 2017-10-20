@@ -75,6 +75,8 @@ export default class Dates extends React.Component {
     return (
       <View style={styles.container}>
         <Logout />
+        <Text>Email: {this.state.user.email}</Text>
+        <Text>UID: {this.state.user.uid}</Text>
         <CalendarList
           onDayPress={this.addDate}
           markedDates={markedDates}
